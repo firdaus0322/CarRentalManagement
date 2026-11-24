@@ -1,0 +1,60 @@
+﻿using CarRentalManagement.Domain;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace CarRentalManagement.Configurations.Entities
+{
+    public class ModelSeed : IEntityTypeConfiguration<Model>
+    {
+        public void Configure(EntityTypeBuilder<Model> builder)
+        {
+            {
+                builder.HasData(
+                    new Model
+                    {
+                        Id = 1,
+                        Name = "i4",
+                        DataCreated = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                        DateCreated = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                        CreatedBy = "System",
+                        UpdatedBy = "System"
+
+                    },
+
+                    new Model
+                    {
+                        Id = 2,
+                        Name = "X5",
+                        DataCreated = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                        DateCreated = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                        CreatedBy = "System",
+                        UpdatedBy = "System"
+
+                    },
+
+                    new Model
+                    {
+                        Id = 3,
+                        Name = "Prius",
+                        DataCreated = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                        DateCreated = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                        CreatedBy = "System",
+                        UpdatedBy = "System"
+
+                    },
+
+                    new Model
+                    {
+                        Id = 4,
+                        Name = "C-HR",
+                        DataCreated = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                        DateCreated = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                        CreatedBy = "System",
+                        UpdatedBy = "System"
+
+                    }
+                );
+            }
+        }
+    }
+}
